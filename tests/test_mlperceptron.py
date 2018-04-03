@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 from __future__ import print_function
-from mlperceptron.mlperceptron import NeuralNetwork
+from mlperceptron import mlperceptron
 import numpy as np
 
 try:
@@ -10,12 +10,12 @@ except:
 
 
 def test_get_optimal_epsilon():
-    n = NeuralNetwork((2,))
+    n = mlperceptron.NeuralNetwork((2,))
     assert n._get_optimal_epsilon(2, 2) == 1.2247448713915889
 
 
 def test_sigmoid():
-    n = NeuralNetwork((2,))
+    n = mlperceptron.NeuralNetwork((2,))
     m = np.matrix(
         '0.73105858 0.88079708; '
         '0.95257413 0.98201379; '
@@ -25,7 +25,7 @@ def test_sigmoid():
 
 
 def test_sigmoid_gradient():
-    n = NeuralNetwork((2,))
+    n = mlperceptron.NeuralNetwork((2,))
     m = np.matrix(
         '0.19661193 0.10499359;'
         '0.04517666 0.01766271;'
@@ -41,7 +41,7 @@ def test_initialize_thetas():
     X = np.matrix(
         '0 0 0;0 0 1;0 1 0;0 1 1;1 0 0;1 0 1;1 1 0;1 1 1')
     y = np.matrix('0;0;0;0;0;0;0;1')
-    n = NeuralNetwork((50, 50, 50,))
+    n = mlperceptron.NeuralNetwork((50, 50, 50,))
     actual = n._initialize_thetas(X, y)
     assert len(actual) == 4
     assert actual[0].shape == (50, 4)
@@ -54,7 +54,7 @@ def test_feedforward_pass():
     X = np.matrix(
         '0 0 0;0 0 1;0 1 0;0 1 1;1 0 0;1 0 1;1 1 0;1 1 1')
     y = np.matrix('0;0;0;0;0;0;0;1')
-    n = NeuralNetwork((2, 2,))
+    n = mlperceptron.NeuralNetwork((2, 2,))
     thetas = n._initialize_thetas(X, y)
     actual = n._feedforward_pass(X, thetas)
     m = X.shape[0]
@@ -79,7 +79,7 @@ def test_feedforward_pass():
 
 
 def test_cost():
-    n = NeuralNetwork((2,))
+    n = mlperceptron.NeuralNetwork((2,))
     X = np.matrix('1 2; 3 4; 5 6')
     y = np.matrix('1;0;1')
     m = X.shape[0]
@@ -97,7 +97,7 @@ def test_cost():
 
 
 def test_regularization():
-    n = NeuralNetwork((2,))
+    n = mlperceptron.NeuralNetwork((2,))
     X = np.matrix('1 2; 3 4; 5 6')
     y = np.matrix('1;0;1')
     m = X.shape[0]
@@ -117,7 +117,7 @@ def test_regularization():
 
 
 def test_get_cost_and_gradient():
-    n = NeuralNetwork((2,))
+    n = mlperceptron.NeuralNetwork((2,))
     X = np.matrix('1 2; 3 4; 5 6')
     y = np.matrix('1;0;1')
     m = X.shape[0]
@@ -147,7 +147,7 @@ def test_overall():
     X = np.matrix(
         '0 0 0;0 0 1;0 1 0;0 1 1;1 0 0;1 0 1;1 1 0;1 1 1')
     y = np.matrix('0;0;0;0;0;0;0;1')
-    n = NeuralNetwork((50, 50, 50,))
+    n = mlperceptron.NeuralNetwork((50, 50, 50,))
 
     g = n.train(X, y, 0.01, show_cost=True)
     y_pred = n.predict(np.matrix('0 1 1;1 1 1;0 0 0;0 1 0;1 1 1'), g)
