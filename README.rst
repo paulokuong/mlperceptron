@@ -1,6 +1,6 @@
 | |Build Status|
 
-Multilayer Neural Network in Python
+Multilayer Perceptron in Python
 -----------------------------------
 
 Python implementation of multilayer perceptron neural network from scratch.
@@ -23,7 +23,6 @@ Code sample
 
 | Predicting outcome of AND logic gate:
 
-.. code:: python
 X = 000, 001, 010, 011, 100, 101, 110, 111
     y = 0,0,0,0,0,0,1
 
