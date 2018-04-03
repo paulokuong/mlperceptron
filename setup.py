@@ -4,8 +4,8 @@ from distutils.core import setup
 with open('README.rst') as file:
     long_description = file.read()
 
-setup(name='neural_network',
-      version='0.1',
+setup(name='mlperceptron',
+      version='0.1c',
       description='Python implementation of multilayer perceptron neural network from scratch.',
       install_requires=[
           'numpy==1.13.3',
