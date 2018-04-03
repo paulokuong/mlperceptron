@@ -37,7 +37,7 @@ Expected results are: 0, 1, 0, 0, 1
 ```python
 
     import numpy as np
-    from neural_network import NeuralNetwork
+    from mlperceptron.mlperceptron import NeuralNetwork
 
     X = np.matrix(
         '0 0 0;0 0 1;0 1 0;0 1 1;1 0 0;1 0 1;1 1 0;1 1 1')

@@ -33,7 +33,7 @@ X = 000, 001, 010, 011, 100, 101, 110, 111
 .. code:: python
 
     import numpy as np
-    from neural_network import NeuralNetwork
+    from mlperceptron.mlperceptron import NeuralNetwork
 
     X = np.matrix(
         '0 0 0;0 0 1;0 1 0;0 1 1;1 0 0;1 0 1;1 1 0;1 1 1')

@@ -5,7 +5,7 @@ with open('README.rst') as file:
     long_description = file.read()
 
 setup(name='mlperceptron',
-      version='0.1c',
+      version='0.0.1',
       description='Python implementation of multilayer perceptron neural network from scratch.',
       install_requires=[
           'numpy==1.13.3',
