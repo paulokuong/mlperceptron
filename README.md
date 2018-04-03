@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/paulokuong/neural_network.svg?branch=master)](https://travis-ci.org/paulokuong/neural_network)[![Coverage Status](https://coveralls.io/repos/github/paulokuong/neural_network/badge.svg?branch=master)](https://coveralls.io/github/paulokuong/neural_network?branch=master)
+[![Build Status](https://travis-ci.org/paulokuong/mlperceptron.svg?branch=master)](https://travis-ci.org/paulokuong/mlperceptron)[![Coverage Status](https://coveralls.io/repos/github/paulokuong/mlperceptron/badge.svg?branch=master)](https://coveralls.io/github/paulokuong/mlperceptron?branch=master)
 Multilayer Neural Network in Python
 ==================
 

@@ -5,7 +5,7 @@ with open('README.rst') as file:
     long_description = file.read()
 
 setup(name='mlperceptron',
-      version='0.0.1',
+      version='0.0.1b',
       description='Python implementation of multilayer perceptron neural network from scratch.',
       install_requires=[
           'numpy==1.13.3',
@@ -18,7 +18,7 @@ setup(name='mlperceptron',
       ],
       keywords=(
           'Neural Network NN neural network multilayer perceptron machine learning logistic classifier'),
-      url='https://github.com/paulokuong/neural_network',
+      url='https://github.com/paulokuong/mlperceptron',
       author='Paulo Kuong',
       author_email='paulo.kuong@gmail.com',
       license='MIT',

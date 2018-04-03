@@ -6,7 +6,7 @@ Multilayer Perceptron in Python
 Python implementation of multilayer perceptron neural network from scratch.
 
     | Minimal neural network class with regularization using scipy minimize. Contains clear pydoc for learners to better understand each stage in the neural network.
-    | https://github.com/paulokuong/neural_network
+    | https://github.com/paulokuong/mlperceptron
 
 Requirements
 ------------
@@ -54,5 +54,5 @@ Contributors
 
 .. _@pkuong: https://github.com/paulokuong
 
-.. |Build Status| image:: https://travis-ci.org/paulokuong/neural_network.svg?branch=master
-.. target: https://travis-ci.org/paulokuong/neural_network
+.. |Build Status| image:: https://travis-ci.org/paulokuong/mlperceptron.svg?branch=master
+.. target: https://travis-ci.org/paulokuong/mlperceptron
