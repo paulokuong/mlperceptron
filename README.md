@@ -14,7 +14,7 @@ Requirements
 Installation
 ------------
 ```
-    pip install neuralnetwork
+    pip install mlperceptron
 ```
 
 Goal
