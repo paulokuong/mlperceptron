@@ -4,13 +4,12 @@ from distutils.core import setup
 with open('README.rst') as file:
     long_description = file.read()
 
-setup(name='noaa-sdk',
-      version='0.1.12c',
-      description='NOAA API (V3) Python 3 SDK.',
+setup(name='neural_network',
+      version='0.1',
+      description='Python implementation of multilayer perceptron neural network from scratch.',
       install_requires=[
-          'httplib2==0.10.3',
-          'urllib3==1.22',
-          'requests'
+          'numpy==1.13.3',
+          'scipy==0.19.1'
       ],
       classifiers=[
           'Development Status :: 3 - Alpha',
@@ -18,8 +17,8 @@ setup(name='noaa-sdk',
           'Programming Language :: Python :: 3.4'
       ],
       keywords=(
-          'NOAA noaa weather public v3 api sdk osm postalcode country postcode'),
-      url='https://github.com/paulokuong/noaa',
+          'Neural Network NN neural network multilayer perceptron machine learning logistic classifier'),
+      url='https://github.com/paulokuong/neural_network',
       author='Paulo Kuong',
       author_email='paulo.kuong@gmail.com',
       license='MIT',
