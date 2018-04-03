@@ -1,8 +1,6 @@
 from __future__ import absolute_import
 from __future__ import print_function
-from unittest.mock import patch
-from mlperceptron import NeuralNetwork
-import pytest
+from mlperceptron.mlperceptron import NeuralNetwork
 import numpy as np
 
 try:
