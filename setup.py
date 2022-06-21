@@ -8,7 +8,7 @@ setup(name='mlperceptron',
       version='0.3',
       description='Python implementation of multilayer perceptron neural network from scratch.',
       install_requires=[
-          'numpy==1.13.3',
+          'numpy==1.22.0',
           'scipy==0.19.1'
       ],
       classifiers=[
