@@ -9,7 +9,7 @@ setup(name='mlperceptron',
       description='Python implementation of multilayer perceptron neural network from scratch.',
       install_requires=[
           'numpy==1.13.3',
-          'scipy==0.19.1'
+          'scipy==1.10.0'
       ],
       classifiers=[
           'Development Status :: 3 - Alpha',
